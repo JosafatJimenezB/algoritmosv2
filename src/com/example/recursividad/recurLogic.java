@@ -34,4 +34,21 @@ public class recurLogic {
 
     }
 
+    public static void printMatrix(int[][] mat, int i, int j) {
+        if(mat==null){
+            return;
+        }
+        if(i==mat.length || j==mat[0].length){
+            return;
+        }
+        System.out.print(mat[i][j]+" ");
+        if(j==mat[0].length-1){
+            System.out.println();
+            printMatrix(mat,i+1,0);
+        }
+        printMatrix(mat,i,j+1);
+    }
+
+
+
 }

@@ -7,6 +7,8 @@ public class main {
         /// Declaracion de los arreglos y variables
         int opc = 0;
         int[] a = {2, 3, 8, 1, 9};
+        int[][] matrix = { { 3, 2, 1, 7 },
+                { 9, 11, 5, 4 }};
 
         //Declaracion de los objetos
         recurLogic ar = new recurLogic(a);
@@ -35,6 +37,7 @@ public class main {
 
                 case 3:
                     System.out.println("Impresion de la matriz");
+                    ar.printMatrix(matrix, 0, 0);
                     break;
 
                 case 4:
