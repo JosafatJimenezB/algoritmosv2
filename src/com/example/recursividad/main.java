@@ -22,26 +22,22 @@ public class main {
             System.out.println("4.- Salir....");
             opc = sc.nextInt();
 
-            switch (opc){
-                case 1:
+            switch (opc) {
+                case 1 -> {
                     System.out.println("Impresion del arreglo");
                     ar.printArray(0);
-                    break;
-
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("Buscar dentro del arreglo");
                     System.out.println("Ingrese el numero a encontrar");
                     int b = sc.nextInt();
                     ar.recursiveSearch(a, b);
-                    break;
-
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("Impresion de la matriz");
                     ar.printMatrix(matrix, 0, 0);
-                    break;
-
-                case 4:
-                    System.out.println("Saliendo...");
+                }
+                case 4 -> System.out.println("Saliendo...");
             }
 
 

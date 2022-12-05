@@ -48,7 +48,4 @@ public class recurLogic {
         }
         printMatrix(mat,i,j+1);
     }
-
-
-
 }
